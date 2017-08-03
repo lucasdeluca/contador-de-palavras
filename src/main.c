@@ -10,13 +10,21 @@
 int main() {
 
   char c;
-
+  int num;
+  
+  num = 0;
   c = 1;
 
   while (c != '\n') {
     scanf("%c", &c);
+
+    if (c == ' '){
+       num++;
+    }
   }
 
-  printf("1\n");
+  num = num++;
+
+  printf("%d", num);
   return 0;
 }
